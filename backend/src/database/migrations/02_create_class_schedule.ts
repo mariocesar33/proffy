@@ -15,7 +15,7 @@ export async function up(knex: Knex) {
       .onUpdate('CASCADE')
       .onDelete('CASCADE');
   });
-};
+}
 
 export async function down(knex: Knex) {
   return knex.schema.dropTable('class_schedule');

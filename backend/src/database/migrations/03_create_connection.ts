@@ -12,11 +12,11 @@ export async function up(knex: Knex) {
       .onDelete('CASCADE');
 
     table.timestamp('created_at')
-      .defaultTo('now()')
+      .defaultTo(knex.raw('CURRENT_TIMESTAMP'))
       .notNullable();
   });
-};
+}
 
 export async function down(knex: Knex) {
   return knex.schema.dropTable('connections');
-};
+}
