@@ -49,20 +49,61 @@ const styles = StyleSheet.create({
   },
 
   footer: {
-
+    backgroundColor: '#fafafc',
+    padding: 24,
+    alignItems: 'center',
+    marginTop: 20,
   },
 
-  price: {},
+  price: {
+    fontFamily: 'Poppins_400Regular',
+    color: '#6a6180',
+    fontSize: 14,
+  },
 
-  priceValue: {},
+  priceValue: {
+    fontFamily: 'Archivo_700Bold',
+    color: '#8257e5',
+    fontSize: 16,
+  },
 
-  buttonsContainer: {},
+  buttonsContainer: {
+    flexDirection: 'row',
+    marginTop: 16,
+  },
 
-  favoriteButton: {},
+  favoriteButton: {
+    backgroundColor: '#8257e5',
+    width: 56,
+    height: 56,
+    borderRadius: 8,
+    justifyContent: 'center',
+    alignItems: 'center',
+    marginRight: 8,
+  },
 
-  contactButton: {},
+  favorited: {
+    backgroundColor: '#e33d3d',
+  },
 
-  contactButtonText: {},
+  contactButton: {
+    flex: 1,
+    backgroundColor: '#04d361',
+    height: 56,
+    borderRadius: 8,
+    flexDirection: 'row',
+    justifyContent: 'center',
+    alignItems: 'center',
+    marginRight: 8,
+  },
+
+  contactButtonText: {
+    color: '#fff',
+    fontFamily: 'Archivo_700Bold',
+    fontSize: 16,
+    marginLeft: 16,
+  },
+  
 });
 
 export default styles;
