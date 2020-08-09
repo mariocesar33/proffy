@@ -24,7 +24,7 @@ function TeacherList() {
         week_day,
         time
       }
-    })
+    });
 
     setTeachers(response.data);
   }
@@ -49,6 +49,7 @@ function TeacherList() {
               { value: 'Matemática', label: 'Matemática' },
               { value: 'Português', label: 'Português' },
               { value: 'Química', label: 'Química' },
+              { value: 'Programação', label: 'Programação' },
             ]}
           />
           <Select
